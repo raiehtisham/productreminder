@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="product_reminder_email_template" label="Product Reminder Email" file="product_reminder.html" type="html" module="Rai_ProductReminder" area="frontend"/>
+    <template id="product_upcoming_reminder_email_template" label="Product Reminder (Upcoming)" file="product_upcoming_reminder.html" type="html" module="Rai_ProductReminder" area="frontend"/>
+</config>

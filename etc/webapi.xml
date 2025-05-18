@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi/etc/webapi.xsd">
+    <route url="/V1/product-reminder" method="POST">
+        <service class="Rai\ProductReminder\Api\ReminderRepositoryInterface" method="setReminder"/>
+        <resources>
+            <resource ref="Company_ProductReminder::product_reminder"/>
+        </resources>
+    </route>
+    <route url="/V1/product-reminder/:customerId" method="GET">
+        <service class="Rai\ProductReminder\Api\ReminderRepositoryInterface" method="getReminders"/>
+        <resources>
+            <resource ref="Company_ProductReminder::product_reminder"/>
+        </resources>
+    </route>
+    <route url="/V1/product-reminder/:id" method="DELETE">
+        <service class="Rai\ProductReminder\Api\ReminderRepositoryInterface" method="deleteReminder"/>
+        <resources>
+            <resource ref="Company_ProductReminder::product_reminder"/>
+        </resources>
+    </route>
+</routes>
